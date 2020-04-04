@@ -100,7 +100,7 @@ public class EmployeeReaderTestSuite {
         //then
         assertEquals(BigDecimal.valueOf(3100.10).setScale(2), mapWithSalariesFromCSVFile.get("Teacher").setScale(2));
         assertEquals(BigDecimal.valueOf(4900.20).setScale(2), mapWithSalariesFromCSVFile.get("Janitor").setScale(2));
-        assertEquals(BigDecimal.valueOf(2300.99), mapWithSalariesFromCSVFile.get("Priest").setScale(2));
+        assertEquals(BigDecimal.valueOf(2300.99).setScale(2), mapWithSalariesFromCSVFile.get("Priest").setScale(2));
         tempCSVFile.delete();
     }
 

@@ -7,6 +7,10 @@ version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.8
 
+ext {
+    javaMainClass = "voicebot.developer.task.Main"
+}
+
 repositories {
     mavenCentral()
 }
@@ -18,4 +22,8 @@ dependencies {
     implementation 'com.opencsv:opencsv:4.1'
 
     testImplementation 'junit:junit:4.12'
+}
+
+task run(type: Exec) {
+    commandLine "java", "-classpath", sourceSets.main.runtimeClasspath.getAsPath(), javaMainClass
 }
