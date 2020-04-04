@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group 'voicebot.developer.task'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework:spring-core:5.2.5.RELEASE'
+    implementation 'commons-collections:commons-collections:3.2.2'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.10.3'
+    implementation 'com.opencsv:opencsv:4.1'
+
+    testImplementation 'junit:junit:4.12'
+}
